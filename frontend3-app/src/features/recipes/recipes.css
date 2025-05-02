@@ -1,0 +1,18 @@
+.tagButton {
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(0, 0%, 70%);
+    margin: 2px;
+}
+
+.tagButton:hover {
+    box-shadow: 1px 1px 1px black;
+    background-color: hsl(0, 0%, 80%);
+}
+
+.tagButton:active {
+    box-shadow: 1px 1px 1px black;
+    background-color: hsl(0, 0%, 60%);
+}

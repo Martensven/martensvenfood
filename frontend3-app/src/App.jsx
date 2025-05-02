@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Router } from 'react-router'
+import { Routes, Route } from 'react-router-dom';
+import { HeadNav } from './features/headNav'
+import { Recipes } from './features/recipes/recipes'
+import { Ingredients } from './features/ingredients/ingredients'
+import { Menu } from './features/menu/menu'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header></Header>
-      <Router>
-
-      </Router>
+      <HeadNav />
+      <Routes>
+        <Route path='/recipes' element={<Recipes />}></Route>
+        <Route path='/ingredients' element={<Ingredients />}></Route>
+        <Route path='/menu' element={<Menu />}></Route>
+      </Routes>
     </>
   )
 }
